@@ -39,7 +39,7 @@ typedef enum {
     None    = 0x0, /**< No agent present.     */
     Human   = 0x1, /**< Human agent present.  */
     Zombie  = 0x2, /**< Zombie agent present. */
-    Unknown = 0x3  /**< Zombie agent present. */
+    Unknown = 0x3  /**< Unknown agent, should never happen. */
 } AGENT_TYPE;
 
 /**
