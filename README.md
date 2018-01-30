@@ -1,40 +1,102 @@
-# Title of project
+﻿# 2º Projeto de Introdução à Computação 2017/2018
 
-* Student name 1 - a0000001
-* Student name 2 - a0000002
-* Student name 3 - a0000003
+## Índice
 
-## Our solution
+ **1.** Introdução 
+ **2.** Ficheiros do projeto
+ **3.** Descrição da solução
+ **4.** Manual de utilizador
+ **5.** Conclusões e dificuldades
+ **6.** Anexo / Referências
 
-Here we'll describe our solution.
+## Introdução
 
-### Architecture
+Neste projeto foi-nos pedido que fizéssemos um jogo em C que simulasse um cenário em que humanos (H) eram perseguidos por zombies (Z). Este deveria ser concebido numa grelha 2D tiroidal e utilizando dimensões X e Y e a vizinhança de Moore. Para além disto era pedido ainda que os agentes (humanos e zombies) fossem espalhados pela grelha sempre que o programa fosse iniciado, que fosse implementada uma IA (Inteligência Artificial) básica e que houvessem dois modos de jogo diferentes: um automático e um interativo.
 
-Here we'll describe the architecture of our game, namely how the game was
-structured. A flow diagram would probably be nice.
+> **Nota:** O jogo não foi finalizado.
 
-### Data structures
+## Ficheiros
 
-Brief description of the implemented data structures for this game.
+### Do projeto:
 
-### Algorithms
+ - example.c
+ - example.h
+ - example.o
+ - example
+ - ini.c
+ - ini.o
+ - jogo.ini
+ - moore.c
+ - moore.h
+ - moore.o
+ - movimento.c
+ - movimento.h
+ - movimento.o
+ - showworld.h
+ - showworld_simple.c
+ - showworld_simple.o
+ - shuffle.c
+ - shuffle.h
+ - shuffle.o
+ - rect.png
 
-Brief description of the algorithms developed for this game. Some very short
-and readable pseudo-code would be nice.
 
-## User guide
+### Outros:
 
-Our game is very simple. Here we explain how to play it.
+ - README. md
+ - Makefile
+ - Doxyfile
 
-## Conclusions
+## Descrição da solução
 
-What did we learn by developing this game?
+Relação entre ficheiros:
 
-## References
+```mermaid
+graph LR
+B[shuffle] --> A[example]
+C[movimento] --> A
+D[moore] --> A
 
-* <a name="ref1">\[1\]</a> Pereira, A. (2017). C e Algoritmos, 2ª edição. Sílabo.
-* <a name="ref2">\[2\]</a> Reagan, P. (2014). [Game Programming in C with the
-Ncurses Library](https://www.viget.com/articles/game-programming-in-c-with-the-ncurses-library),
-Viget Labs.
-* <a name="ref3">\[3\]</a> [2D game development basics (2010)](https://stackoverflow.com/questions/3144399/2d-game-development-basics),
-stackoverflow.com
+```
+> **Nota:** O jogo não foi finalizado, por isso não foi possível chegar a uma solução.
+
+## Manual de utilizador
+
+ **1.** Para criar uma *build* do jogo é necessário executar o seguinte comando no **terminal**:
+
+    $ make
+
+ **2.** Como jogar:
+
+> **Nota:** Visto que o jogo não foi finalizado, não foi possível acabar o manual.
+
+## Conclusões e dificuldades
+
+O projeto embora ambicioso e interessante era bastante complexo. Como tal, apareceram bastantes obstáculos. Alguns foram ultrapassados mas muitos acabaram por se manter, dificultando assim a continuação do desenvolvimento do mesmo.
+No entanto, foram feitos progressos e muito foi aprendido, visto que o projeto nos permitiu treinar vários aspetos na utilização da linguagem C (como utilização de apontadores, *enums* e *structs*, embora os mesmos nem sempre tenham sido utilizados), do terminal de Ubuntu, nomeadamente na compilação de vários ficheiros, utilização de makefiles e navegação no mesmo.
+
+## Anexo / Referências
+
+**Fontes utilizadas durante o desenvolvimento do projeto:**
+
+ - https://www.tutorialspoint.com/cprogramming/c_structures.htm
+ - https://www.programiz.com/c-programming/c-pointers
+ - https://www.tutorialspoint.com/cprogramming/c_pointers.htm
+ - https://boredzo.org/pointers/
+ - https://stackoverflow.com/questions/37538/how-do-i-determine-the-size-of-my-array-in-c
+ - https://stackoverflow.com/questions/6127503/shuffle-array-in-c
+ - https://stackoverflow.com/questions/42645455/shuffling-an-array-of-struct-in-c
+ - https://stackoverflow.com/questions/34203053/shuffle-multidimensional-array-in-c
+ - https://stackoverflow.com/questions/2280352/use-an-ini-file-in-c-on-linux
+ - http://www.ncbr.muni.cz/~martinp/g2/index.html
+
+## Metadados:
+
+**Docente:** Nuno Fachada
+    
+**Discente:** Rodrigo Garcia nº 21704304
+**Discente:** Tiago Alves nº 21701031
+
+**Curso:** Licenciatura em Aplicações Multimédia e Videojogos
+**Instituição:** Universidade Lusófona de Humanidades e Tecnologias
+
