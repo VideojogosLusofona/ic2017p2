@@ -1,0 +1,97 @@
+\hypertarget{example_8c}{}\section{code/example.c File Reference}
+\label{example_8c}\index{code/example.\+c@{code/example.\+c}}
+{\ttfamily \#include \char`\"{}showworld.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}shuffle.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}ini.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_a_g_e_n_t}{A\+G\+E\+NT}}
+\item 
+struct \mbox{\hyperlink{struct_w_o_r_l_d}{W\+O\+R\+LD}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{example_8c_a2c2bde7b7ee036456c079b97d1a904b8}{W\+O\+R\+L\+D\+\_\+X}}~20
+\item 
+\#define \mbox{\hyperlink{example_8c_a64e8c993f3050d1eb6f4371ce2506996}{W\+O\+R\+L\+D\+\_\+Y}}~20
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \mbox{\hyperlink{example_8c_a8fc8348057055f92b997e34c63645911}{example\+\_\+get\+\_\+ag\+\_\+info}} (void $\ast$world, unsigned int x, unsigned int y)
+\item 
+int \mbox{\hyperlink{example_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file is an example of\+: a) how to use the A\+PI defined in the \mbox{\hyperlink{showworld_8h}{showworld.\+h}} header (mandatory for the project); and, b) how to use the concrete simple implementation of the A\+PI (provided by the \mbox{\hyperlink{showworld__simple_8c}{showworld\+\_\+simple.\+c}} file).
+
+\begin{DoxyAuthor}{Author}
+Nuno Fachada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2018 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+\href{http://www.gnu.org/licenses/gpl.html}{\tt G\+NU General Public License version 3 (G\+P\+Lv3)} 
+\end{DoxyCopyright}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{example_8c_a2c2bde7b7ee036456c079b97d1a904b8}\label{example_8c_a2c2bde7b7ee036456c079b97d1a904b8}} 
+\index{example.\+c@{example.\+c}!W\+O\+R\+L\+D\+\_\+X@{W\+O\+R\+L\+D\+\_\+X}}
+\index{W\+O\+R\+L\+D\+\_\+X@{W\+O\+R\+L\+D\+\_\+X}!example.\+c@{example.\+c}}
+\subsubsection{\texorpdfstring{W\+O\+R\+L\+D\+\_\+X}{WORLD\_X}}
+{\footnotesize\ttfamily \#define W\+O\+R\+L\+D\+\_\+X~20}
+
+Horizontal world size. \mbox{\Hypertarget{example_8c_a64e8c993f3050d1eb6f4371ce2506996}\label{example_8c_a64e8c993f3050d1eb6f4371ce2506996}} 
+\index{example.\+c@{example.\+c}!W\+O\+R\+L\+D\+\_\+Y@{W\+O\+R\+L\+D\+\_\+Y}}
+\index{W\+O\+R\+L\+D\+\_\+Y@{W\+O\+R\+L\+D\+\_\+Y}!example.\+c@{example.\+c}}
+\subsubsection{\texorpdfstring{W\+O\+R\+L\+D\+\_\+Y}{WORLD\_Y}}
+{\footnotesize\ttfamily \#define W\+O\+R\+L\+D\+\_\+Y~20}
+
+Vertical world size. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{example_8c_a8fc8348057055f92b997e34c63645911}\label{example_8c_a8fc8348057055f92b997e34c63645911}} 
+\index{example.\+c@{example.\+c}!example\+\_\+get\+\_\+ag\+\_\+info@{example\+\_\+get\+\_\+ag\+\_\+info}}
+\index{example\+\_\+get\+\_\+ag\+\_\+info@{example\+\_\+get\+\_\+ag\+\_\+info}!example.\+c@{example.\+c}}
+\subsubsection{\texorpdfstring{example\+\_\+get\+\_\+ag\+\_\+info()}{example\_get\_ag\_info()}}
+{\footnotesize\ttfamily unsigned int example\+\_\+get\+\_\+ag\+\_\+info (\begin{DoxyParamCaption}\item[{void $\ast$}]{w,  }\item[{unsigned int}]{x,  }\item[{unsigned int}]{y }\end{DoxyParamCaption})}
+
+This function is an implementation of the \mbox{\hyperlink{showworld_8h_aa7881dde0e99af6e6576a7401f3c4586}{get\+\_\+agent\+\_\+info\+\_\+at()}} function definition. It only works for \mbox{\hyperlink{struct_a_g_e_n_t}{A\+G\+E\+NT}} and \mbox{\hyperlink{struct_w_o_r_l_d}{W\+O\+R\+LD}} structures defined in this example.
+
+It basically receives a pointer to a \mbox{\hyperlink{struct_w_o_r_l_d}{W\+O\+R\+LD}} structure, obtains the \mbox{\hyperlink{struct_a_g_e_n_t}{A\+G\+E\+NT}} structure in the given coordinates, and returns the agent information in a bit-\/packed {\ttfamily unsigned int}.
+
+\begin{DoxyNote}{Note}
+This is an example which will probably not work in a fully functional game. Students should develop their own implementation of \mbox{\hyperlink{showworld_8h_aa7881dde0e99af6e6576a7401f3c4586}{get\+\_\+agent\+\_\+info\+\_\+at()}} and agent/world data structures.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em w} & Generic pointer to object representing the simulation world. \\
+\hline
+{\em x} & Horizontal coordinate of the simulation world from where to fetch the agent information. \\
+\hline
+{\em y} & Vertical coordinate of the simulation world from where to fetch the agent information. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An integer containing bit-\/packed information about an agent, as follows\+: bits 0-\/1 (agent type), bit 2 (is agent playable), bits 3-\/18 (agent ID). Bits 19-\/31 are available for student-\/defined agent extensions. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{example_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{example_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{example.\+c@{example.\+c}!main@{main}}
+\index{main@{main}!example.\+c@{example.\+c}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This {\ttfamily main} function is only an example of\+: a) how to use the A\+PI defined in the \mbox{\hyperlink{showworld_8h}{showworld.\+h}} header (mandatory for the project); and, b) how to use the concrete simple implementation of the A\+PI (provided in the \mbox{\hyperlink{showworld__simple_8c}{showworld\+\_\+simple.\+c}} file).
+
+\begin{DoxyReturn}{Returns}
+Always zero. 
+\end{DoxyReturn}

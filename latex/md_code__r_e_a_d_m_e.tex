@@ -1,0 +1,105 @@
+\subsection*{Índice}
+
+{\bfseries 1.} Introdução {\bfseries 2.} Ficheiros do projeto {\bfseries 3.} Descrição da solução {\bfseries 4.} Manual de utilizador {\bfseries 5.} Conclusões e dificuldades {\bfseries 6.} Anexo / Referências
+
+\subsection*{Introdução}
+
+Neste projeto foi-\/nos pedido que fizéssemos um jogo em C que simulasse um cenário em que humanos (H) eram perseguidos por zombies (Z). Este deveria ser concebido numa grelha 2D tiroidal e utilizando dimensões X e Y e a vizinhança de Moore. Para além disto era pedido ainda que os agentes (humanos e zombies) fossem espalhados pela grelha sempre que o programa fosse iniciado, que fosse implementada uma IA (Inteligência Artificial) básica e que houvessem dois modos de jogo diferentes\+: um automático e um interativo.
+
+\begin{quote}
+{\bfseries Nota\+:} O jogo não foi finalizado. \end{quote}
+
+
+\subsection*{Ficheiros}
+
+\subsubsection*{Do projeto\+:}
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{example_8c}{example.\+c}}
+\item \mbox{\hyperlink{example_8h_source}{example.\+h}}
+\item example.\+o
+\item example
+\item ini.\+c
+\item ini.\+o
+\item jogo.\+ini
+\item moore.\+c
+\item \mbox{\hyperlink{moore_8h_source}{moore.\+h}}
+\item moore.\+o
+\item movimento.\+c
+\item \mbox{\hyperlink{movimento_8h_source}{movimento.\+h}}
+\item movimento.\+o
+\item \mbox{\hyperlink{showworld_8h}{showworld.\+h}}
+\item \mbox{\hyperlink{showworld__simple_8c}{showworld\+\_\+simple.\+c}}
+\item showworld\+\_\+simple.\+o
+\item shuffle.\+c
+\item \mbox{\hyperlink{shuffle_8h_source}{shuffle.\+h}}
+\item shuffle.\+o
+\item rect.\+png
+\end{DoxyItemize}
+
+\subsubsection*{Outros\+:}
+
+
+\begin{DoxyItemize}
+\item R\+E\+A\+D\+ME. md
+\item Makefile
+\item Doxyfile
+\end{DoxyItemize}
+
+\subsection*{Descrição da solução}
+
+Relação entre ficheiros\+:
+
+
+\begin{DoxyCode}
+graph LR
+B[shuffle] --> A[example]
+C[movimento] --> A
+D[moore] --> A
+\end{DoxyCode}
+ \begin{quote}
+{\bfseries Nota\+:} O jogo não foi finalizado, por isso não foi possível chegar a uma solução. \end{quote}
+
+
+\subsection*{Manual de utilizador}
+
+{\bfseries 1.} Para criar uma {\itshape build} do jogo é necessário executar o seguinte comando no {\bfseries terminal}\+:
+
+\$ make
+
+{\bfseries 2.} Como jogar\+:
+
+\begin{quote}
+{\bfseries Nota\+:} Visto que o jogo não foi finalizado, não foi possível acabar o manual. \end{quote}
+
+
+\subsection*{Conclusões e dificuldades}
+
+O projeto embora ambicioso e interessante era bastante complexo. Como tal, apareceram bastantes obstáculos. Alguns foram ultrapassados mas muitos acabaram por se manter, dificultando assim a continuação do desenvolvimento do mesmo. No entanto, foram feitos progressos e muito foi aprendido, visto que o projeto nos permitiu treinar vários aspetos na utilização da linguagem C (como utilização de apontadores, {\itshape enums} e {\itshape structs}, embora os mesmos nem sempre tenham sido utilizados), do terminal de Ubuntu, nomeadamente na compilação de vários ficheiros, utilização de makefiles e navegação no mesmo.
+
+\subsection*{Anexo / Referências}
+
+{\bfseries Fontes utilizadas durante o desenvolvimento do projeto\+:}
+
+
+\begin{DoxyItemize}
+\item \href{https://www.tutorialspoint.com/cprogramming/c_structures.htm}{\tt https\+://www.\+tutorialspoint.\+com/cprogramming/c\+\_\+structures.\+htm}
+\item \href{https://www.programiz.com/c-programming/c-pointers}{\tt https\+://www.\+programiz.\+com/c-\/programming/c-\/pointers}
+\item \href{https://www.tutorialspoint.com/cprogramming/c_pointers.htm}{\tt https\+://www.\+tutorialspoint.\+com/cprogramming/c\+\_\+pointers.\+htm}
+\item \href{https://boredzo.org/pointers/}{\tt https\+://boredzo.\+org/pointers/}
+\item \href{https://stackoverflow.com/questions/37538/how-do-i-determine-the-size-of-my-array-in-c}{\tt https\+://stackoverflow.\+com/questions/37538/how-\/do-\/i-\/determine-\/the-\/size-\/of-\/my-\/array-\/in-\/c}
+\item \href{https://stackoverflow.com/questions/6127503/shuffle-array-in-c}{\tt https\+://stackoverflow.\+com/questions/6127503/shuffle-\/array-\/in-\/c}
+\item \href{https://stackoverflow.com/questions/42645455/shuffling-an-array-of-struct-in-c}{\tt https\+://stackoverflow.\+com/questions/42645455/shuffling-\/an-\/array-\/of-\/struct-\/in-\/c}
+\item \href{https://stackoverflow.com/questions/34203053/shuffle-multidimensional-array-in-c}{\tt https\+://stackoverflow.\+com/questions/34203053/shuffle-\/multidimensional-\/array-\/in-\/c}
+\item \href{https://stackoverflow.com/questions/2280352/use-an-ini-file-in-c-on-linux}{\tt https\+://stackoverflow.\+com/questions/2280352/use-\/an-\/ini-\/file-\/in-\/c-\/on-\/linux}
+\item \href{http://www.ncbr.muni.cz/~martinp/g2/index.html}{\tt http\+://www.\+ncbr.\+muni.\+cz/$\sim$martinp/g2/index.\+html}
+\end{DoxyItemize}
+
+\subsection*{Metadados\+:}
+
+{\bfseries Docente\+:} Nuno Fachada
+
+{\bfseries Discente\+:} Rodrigo Garcia nº 21704304 {\bfseries Discente\+:} Tiago Alves nº 21701031
+
+{\bfseries Curso\+:} Licenciatura em Aplicações Multimédia e Videojogos {\bfseries Instituição\+:} Universidade Lusófona de Humanidades e Tecnologias 
